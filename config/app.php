@@ -54,7 +54,10 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost'),
+    'url' => env('APP_URL', 'https://admin.aluminiconnect.online'),
+    'secure_proxy' => env('APP_SECURE_PROXY', true),
+    'force_https' => env('APP_FORCE_HTTPS', true),
+    'proxy_ips' => env('TRUSTED_PROXIES', '*'),
 
     'asset_url' => env('ASSET_URL', '/'),
 
