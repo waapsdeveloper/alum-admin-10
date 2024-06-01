@@ -26,8 +26,8 @@
         <img class="center-res-image-7895675" src="{{ asset('images/logo_large.png')}}" />
     </body>
     <script>
-        // setTimeout(() => {
-        //     window.location.href = '/admin'
-        // }, 1500);
+        setTimeout(() => {
+            window.location.href = '/admin'
+        }, 1500);
     </script>
 </html>
