@@ -16,6 +16,6 @@ class Job extends Model
         'name',
         'type',
         'description',
-        'image'
+
     ];
 }
