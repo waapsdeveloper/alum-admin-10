@@ -13,6 +13,9 @@ class Election extends Model
         'user_id',
         'title',
         'description',
-        'options'
+        'option_1',
+        'option_2',
+        'option_3',
+        'option_4',
     ];
 }
