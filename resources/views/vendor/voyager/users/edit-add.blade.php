@@ -61,8 +61,12 @@
                             </div>
                             <div class="form-group">
                                 <label for="is_verified">Is Verified</label>
-                                <input type="text" class="form-control" id="is_verified" name="is_verified" value="{{ $dataTypeContent->is_verified ?? '' }}">
+                                <select class="form-control" id="is_verified" name="is_verified">
+                                    <option value="0" {{ isset($dataTypeContent->is_verified) && $dataTypeContent->is_verified == 0 ? 'selected' : '' }}>Not Verified</option>
+                                    <option value="1" {{ isset($dataTypeContent->is_verified) && $dataTypeContent->is_verified == 1 ? 'selected' : '' }}>Verified</option>
+                                </select>
                             </div>
+
 
                             @can('editRoles', $dataTypeContent)
                                 <div class="form-group">
