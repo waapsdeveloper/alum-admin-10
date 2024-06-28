@@ -16,6 +16,11 @@ class Job extends Model
         'image',
         'type',
         'description',
+        'over_view',
+        'seniority_level',
+        'industry',
+        'employment_type',
+        'job_functions'
 
     ];
 }
