@@ -42,7 +42,8 @@ class EmailController extends Controller
             ]);
         }
 
-        Mail::to($data['email'])->send(new TestMail(['code' => $code ]));
+        // Send email using Mailable
+        Mail::to($data['email'])->send(new TestMail(['user_id' => $user->id, 'code' => $code]));
 
         return response()->json(['message' => 'Test email sent!', 'code' => $code], 200);
     }
