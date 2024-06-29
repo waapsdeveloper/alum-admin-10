@@ -12,26 +12,14 @@ class TestMail extends Mailable
 
     public $data;
 
-    /**
-     * Create a new message instance.
-     *
-     * @param array $data
-     * @return void
-     */
-    public function __construct(array $data)
+    public function __construct($data)
     {
         $this->data = $data;
     }
 
-    /**
-     * Build the message.
-     *
-     * @return $this
-     */
     public function build()
     {
-        return $this->from('hello@example.com')
-                    ->view('emails.test')
-                    ->with('data', $this->data);
+        return $this->view('emails.test')
+                    ->with(['code' => $this->data['code']]);
     }
 }

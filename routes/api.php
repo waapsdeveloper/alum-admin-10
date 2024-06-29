@@ -20,4 +20,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 
-Route::post('/test', [EmailController::class, 'test']);
+Route::post('/get-code', [EmailController::class, 'verificationCode']);
+
+Route::post('/verification', [EmailController::class, 'codeVerification']);
