@@ -62,7 +62,7 @@
         <div class="content">
             <p class="code">Your account is in review</p>
             <p class="code">Click the link below for verification</p>
-            {{-- <p class="code"><a href="https://admin.aluminiconnect.online/api/verification?user_id={{user_id}}&code={{code}}">Click here!</a></p> --}}
+            <p class="code"><a href="https://admin.aluminiconnect.online/api/verification?user_id={{user_id}}&code={{code}}">Click here!</a></p>
         </div>
         <div class="footer">
             <p>If you received this email, your email configuration is working correctly.</p>
