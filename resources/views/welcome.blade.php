@@ -20,6 +20,9 @@
                 height: 50vh;
 
             }
+            body{
+                background-color: #81181B
+            }
         </style>
     </head>
     <body class="antialiased">
