@@ -42,7 +42,7 @@ class EmailController extends Controller
             ]);
         }
 
-        Mail::to($data['email'])->send(new TestMail(['code' => $code]));
+        Mail::to($data['email'])->send(new TestMail(['code' => $code , 'user_id' =>$user->id]));
 
         return response()->json(['message' => 'Test email sent!', 'code' => $code], 200);
     }
