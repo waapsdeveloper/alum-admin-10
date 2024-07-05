@@ -23,7 +23,7 @@
         </style>
     </head>
     <body class="antialiased">
-        <img class="center-res-image-7895675" src="{{ asset('images/logo_large.png')}}" />
+        <img class="center-res-image-7895675" src="{{ asset('images/alum-conn.png')}}" />
     </body>
     <script>
         setTimeout(() => {
