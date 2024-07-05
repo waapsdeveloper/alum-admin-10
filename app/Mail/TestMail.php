@@ -20,6 +20,10 @@ class TestMail extends Mailable
     public function build()
     {
         return $this->view('emails.test')
-                    ->with(['code' => $this->data['code']]);
+                    ->with([
+                        'code' => $this->data['code'],
+                        'user_id' => $this->data['user_id']
+                    ]);
     }
+
 }
